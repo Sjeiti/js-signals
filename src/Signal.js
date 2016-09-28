@@ -131,7 +131,7 @@
 
         /**
          * Add a listener to the signal.
-         * @param {Function} listener Signal handler function.
+         * @param {Function} listener Signal handler function. When a listener returns false, subsequent listeners are not executed.
          * @param {Object} [listenerContext] Context on which listener will be executed (object that should represent the `this` variable inside listener function).
          * @param {Number} [priority] The priority level of the event listener. Listeners with higher priority will be executed before listeners with lower priority. Listeners with same priority level will be executed at the same order as they were added. (default = 0)
          * @return {SignalBinding} An Object representing the binding between the Signal and listener.
